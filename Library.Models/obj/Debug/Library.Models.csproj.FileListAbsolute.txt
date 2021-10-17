@@ -1,0 +1,15 @@
+C:\Users\vohoa\Desktop\Project11\Library\Library.Models\bin\Debug\Library.Models.dll.config
+C:\Users\vohoa\Desktop\Project11\Library\Library.Models\bin\Debug\Library.Models.dll
+C:\Users\vohoa\Desktop\Project11\Library\Library.Models\bin\Debug\Library.Models.pdb
+C:\Users\vohoa\Desktop\Project11\Library\Library.Models\bin\Debug\EntityFramework.dll
+C:\Users\vohoa\Desktop\Project11\Library\Library.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\vohoa\Desktop\Project11\Library\Library.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\vohoa\Desktop\Project11\Library\Library.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\vohoa\Desktop\Project11\Library\Library.Models\bin\Debug\EntityFramework.xml
+C:\Users\vohoa\Desktop\Project11\Library\Library.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\vohoa\Desktop\Project11\Library\Library.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\vohoa\Desktop\Project11\Library\Library.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\vohoa\Desktop\Project11\Library\Library.Models\obj\Debug\Library.Models.csproj.AssemblyReference.cache
+C:\Users\vohoa\Desktop\Project11\Library\Library.Models\obj\Debug\Library.Models.csproj.CoreCompileInputs.cache
+C:\Users\vohoa\Desktop\Project11\Library\Library.Models\obj\Debug\Library.Models.dll
+C:\Users\vohoa\Desktop\Project11\Library\Library.Models\obj\Debug\Library.Models.pdb
