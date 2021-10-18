@@ -231,3 +231,4 @@ C:\Users\vohoa\Desktop\New folder (2)\Library.WebMVC\obj\Debug\Library.WebMVC.cs
 C:\Users\vohoa\Desktop\New folder (2)\Library.WebMVC\obj\Debug\Library.WebMVC.csproj.CoreCompileInputs.cache
 C:\Users\vohoa\Desktop\New folder (2)\Library.WebMVC\obj\Debug\Library.WebMVC.dll
 C:\Users\vohoa\Desktop\New folder (2)\Library.WebMVC\obj\Debug\Library.WebMVC.pdb
+C:\Users\vohoa\Desktop\New folder (2)\Library.WebMVC\obj\Debug\Library.WebMVC.csproj.CopyComplete

@@ -38,6 +38,5 @@ C:\Users\vohoa\Desktop\New folder (2)\Library.Services\bin\Debug\Microsoft.AspNe
 C:\Users\vohoa\Desktop\New folder (2)\Library.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\Users\vohoa\Desktop\New folder (2)\Library.Services\obj\Debug\Library.Services.csproj.AssemblyReference.cache
 C:\Users\vohoa\Desktop\New folder (2)\Library.Services\obj\Debug\Library.Services.csproj.CoreCompileInputs.cache
-C:\Users\vohoa\Desktop\New folder (2)\Library.Services\obj\Debug\Library.Services.csproj.CopyComplete
 C:\Users\vohoa\Desktop\New folder (2)\Library.Services\obj\Debug\Library.Services.dll
 C:\Users\vohoa\Desktop\New folder (2)\Library.Services\obj\Debug\Library.Services.pdb

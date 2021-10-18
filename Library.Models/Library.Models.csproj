@@ -55,6 +55,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BookCreate.cs" />
+    <Compile Include="BookDetail.cs" />
+    <Compile Include="BookEdit.cs" />
     <Compile Include="BookListItem.cs" />
     <Compile Include="LibraryyCreate.cs" />
     <Compile Include="LibraryyDetail.cs" />

@@ -46,6 +46,74 @@ namespace Library.WebMVC.Controllers
             return View(model);
         }
 
+        public ActionResult Details(int id)
+        {
+            var svc = CreateBookService();
+            var model = svc.GetBookById(id);
+            return View(model);
+        }
+
+        public ActionResult Edit(int id)
+        {
+            var service = CreateBookService();
+            var detail = service.GetBookById(id);
+            var model =
+                new BookEdit
+                {
+                    BookID = detail.BookID,
+                    BookName = detail.BookName,
+                    BookDescription = detail.BookDescription,
+                    Genre = detail.Genre
+                };
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(int id, BookEdit model)
+        {
+            if (!ModelState.IsValid) return View(model);
+
+            if (model.BookID != id)
+            {
+                ModelState.AddModelError("", "Id Mismatch");
+                return View(model);
+            }
+
+            var service = CreateBookService();
+            if (service.UpdateBook(model))
+            {
+                TempData["SaveResult"] = "Book was updated.";
+                return RedirectToAction("Index");
+            }
+
+            ModelState.AddModelError("", "Can not update.");
+            return View(model);
+        }
+
+        [ActionName("Delete")]
+        public ActionResult Delete(int id)
+        {
+            var svc = CreateBookService();
+            var model = svc.GetBookById(id);
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeletePost(int id)
+        {
+            var service = CreateBookService();
+
+            service.DeleteBook(id);
+
+            TempData["SaveResult"] = "Book was deleted";
+
+            return RedirectToAction("Index");
+        }
+
         private BookService CreateBookService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());

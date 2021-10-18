@@ -53,5 +53,55 @@ namespace Library.Services
             }
         }
 
+        public BookDetail GetBookById(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Books
+                        .Single(e => e.BookID == id && e.OwnerId == _userId);
+                return
+                    new BookDetail
+                    {
+                        BookID = entity.BookID,
+                        BookName = entity.BookName,
+                        BookDescription = entity.BookDescription,
+                        Genre = entity.Genre
+                    };
+            }
+        }
+
+        public bool UpdateBook(BookEdit model)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Books
+                        .Single(e => e.BookID == model.BookID && e.OwnerId == _userId);
+
+                entity.BookName = model.BookName;
+                entity.BookDescription = model.BookDescription;
+                entity.Genre = model.Genre;
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
+
+        public bool DeleteBook(int bookId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                    .Books
+                    .Single(e => e.BookID == bookId && e.OwnerId == _userId);
+
+                ctx.Books.Remove(entity);
+                return ctx.SaveChanges() == 1;
+            }
+        }
+
     }
 }
