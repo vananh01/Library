@@ -9,10 +9,9 @@ C:\Users\vohoa\Desktop\Project11\Library\Library.Data\bin\Debug\EntityFramework.
 C:\Users\vohoa\Desktop\Project11\Library\Library.Data\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\vohoa\Desktop\Project11\Library\Library.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 C:\Users\vohoa\Desktop\Project11\Library\Library.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\vohoa\Desktop\Project11\Library\Library.Data\obj\Debug\Library.Data.csproj.AssemblyReference.cache
+C:\Users\vohoa\Desktop\Project11\Library\Library.Data\obj\Debug\Library.Data.Migrations.InitialCreate.resources
+C:\Users\vohoa\Desktop\Project11\Library\Library.Data\obj\Debug\Library.Data.Migrations.inititalmigration.resources
+C:\Users\vohoa\Desktop\Project11\Library\Library.Data\obj\Debug\Library.Data.csproj.GenerateResource.cache
 C:\Users\vohoa\Desktop\Project11\Library\Library.Data\obj\Debug\Library.Data.csproj.CoreCompileInputs.cache
 C:\Users\vohoa\Desktop\Project11\Library\Library.Data\obj\Debug\Library.Data.dll
 C:\Users\vohoa\Desktop\Project11\Library\Library.Data\obj\Debug\Library.Data.pdb
-C:\Users\vohoa\Desktop\Project11\Library\Library.Data\obj\Debug\Library.Data.Migrations.InitialCreate.resources
-C:\Users\vohoa\Desktop\Project11\Library\Library.Data\obj\Debug\Library.Data.csproj.GenerateResource.cache
-C:\Users\vohoa\Desktop\Project11\Library\Library.Data\obj\Debug\Library.Data.Migrations.inititalmigration.resources

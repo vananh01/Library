@@ -1,5 +1,3 @@
-C:\Users\vohoa\Desktop\Project11\Library\Library.WebMVC\obj\Debug\Library.WebMVC.csproj.AssemblyReference.cache
-C:\Users\vohoa\Desktop\Project11\Library\Library.WebMVC\obj\Debug\Library.WebMVC.csproj.CoreCompileInputs.cache
 C:\Users\vohoa\Desktop\Project11\Library\Library.WebMVC\bin\Library.WebMVC.dll.config
 C:\Users\vohoa\Desktop\Project11\Library\Library.WebMVC\bin\Library.WebMVC.dll
 C:\Users\vohoa\Desktop\Project11\Library\Library.WebMVC\bin\Library.WebMVC.pdb
@@ -112,5 +110,8 @@ C:\Users\vohoa\Desktop\Project11\Library\Library.WebMVC\bin\Microsoft.Owin.Secur
 C:\Users\vohoa\Desktop\Project11\Library\Library.WebMVC\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\vohoa\Desktop\Project11\Library\Library.WebMVC\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\vohoa\Desktop\Project11\Library\Library.WebMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\vohoa\Desktop\Project11\Library\Library.WebMVC\obj\Debug\Library.WebMVC.csproj.AssemblyReference.cache
+C:\Users\vohoa\Desktop\Project11\Library\Library.WebMVC\obj\Debug\Library.WebMVC.csproj.CoreCompileInputs.cache
 C:\Users\vohoa\Desktop\Project11\Library\Library.WebMVC\obj\Debug\Library.WebMVC.dll
 C:\Users\vohoa\Desktop\Project11\Library\Library.WebMVC\obj\Debug\Library.WebMVC.pdb
+C:\Users\vohoa\Desktop\Project11\Library\Library.WebMVC\obj\Debug\Library.WebMVC.csproj.CopyComplete

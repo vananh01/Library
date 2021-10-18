@@ -47,7 +47,76 @@ namespace Library.WebMVC.Controllers
 
 
         }
+        
+        public ActionResult Details(int id)
+        {
+            var svc = CreatePersonService();
+            var model = svc.GetPersonById(id);
 
+            return View(model);
+        }
+
+        public ActionResult Edit(int id)
+        {
+            var service = CreatePersonService();
+            var detail = service.GetPersonById(id);
+            var model =
+                new PersonEdit
+                {
+                    PersonID = detail.PersonID,
+                    Name = detail.Name,
+                    Password = detail.Password,
+                    Email = detail.Email
+                };
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(int id, PersonEdit model)
+        {
+            if (!ModelState.IsValid) return View(model);
+            
+            if(model.PersonID != id)
+            {
+                ModelState.AddModelError("", "Id Mismatch");
+                return View(model);
+            }
+
+            var service = CreatePersonService();
+            
+            if (service.UpdatePerson(model))
+            {
+                TempData["SaveResult"] = "Successfully updated.";
+                return RedirectToAction("Index");
+            }
+
+            ModelState.AddModelError("", "Can not be updated.");
+            return View(model);
+        }
+
+        [ActionName("Delete")]
+        public ActionResult Delete(int id)
+        {
+            var svc = CreatePersonService();
+            var model = svc.GetPersonById(id);
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeletePost(int id)
+        {
+            var service = CreatePersonService();
+
+            service.DeletePerson(id);
+
+            TempData["SaveResult"] = "Deleted!";
+
+            return RedirectToAction("Index");
+        }
         private PersonService CreatePersonService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());
