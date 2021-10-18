@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Book.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Libraryy.cs" />
     <Compile Include="Migrations\202110172036354_InitialCreate.cs" />
@@ -67,6 +68,10 @@
     <Compile Include="Migrations\202110180246325_secondMigration.cs" />
     <Compile Include="Migrations\202110180246325_secondMigration.Designer.cs">
       <DependentUpon>202110180246325_secondMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110180456357_ThirdMigration.cs" />
+    <Compile Include="Migrations\202110180456357_ThirdMigration.Designer.cs">
+      <DependentUpon>202110180456357_ThirdMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Person.cs" />
@@ -85,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202110180246325_secondMigration.resx">
       <DependentUpon>202110180246325_secondMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110180456357_ThirdMigration.resx">
+      <DependentUpon>202110180456357_ThirdMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

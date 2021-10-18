@@ -9,6 +9,7 @@ using System.Web.Mvc;
 
 namespace Library.WebMVC.Controllers
 {
+    [Authorize]
     public class LibraryyController : Controller
     {
         // GET: Libraryy
