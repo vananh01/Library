@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Library.Models
 {
-    public class LibraryyDetail
+    public class LibraryyEdit
     {
         [Key]
         public int LibraryID { get; set; }
@@ -15,7 +15,5 @@ namespace Library.Models
         public string Name { get; set; }
         [Required]
         public string Address { get; set; }
-
-
     }
 }

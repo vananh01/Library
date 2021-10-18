@@ -16,4 +16,3 @@ C:\Users\vohoa\Desktop\Project11\Library\Library.Models\obj\Debug\Library.Models
 C:\Users\vohoa\Desktop\Project11\Library\Library.Models\bin\Debug\Library.Data.dll
 C:\Users\vohoa\Desktop\Project11\Library\Library.Models\bin\Debug\Library.Data.pdb
 C:\Users\vohoa\Desktop\Project11\Library\Library.Models\bin\Debug\Library.Data.dll.config
-C:\Users\vohoa\Desktop\Project11\Library\Library.Models\obj\Debug\Library.Models.csproj.CopyComplete

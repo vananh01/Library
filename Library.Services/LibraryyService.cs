@@ -52,5 +52,52 @@ namespace Library.Services
                 return query.ToArray();
             }
         }
+
+        public LibraryyDetail GetLibraryyById(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                    .Libraries
+                    .Single(e => e.LibraryID == id && e.OwnerId == _userId);
+                return
+                    new LibraryyDetail
+                    {
+                        LibraryID = entity.LibraryID,
+                        Name = entity.Name,
+                        Address = entity.Address
+                    };
+            }
+        }
+
+        public bool UpdateLibraryy(LibraryyEdit model)
+        {
+            using(var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Libraries
+                        .Single(e => e.LibraryID == model.LibraryID && e.OwnerId == _userId);
+                entity.Name = model.Name;
+                entity.Address = model.Address;
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
+
+        public bool DeleteLibraryy(int libraryId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                    .Libraries
+                    .Single(e => e.LibraryID == libraryId && e.OwnerId == _userId);
+
+                ctx.Libraries.Remove(entity);
+                return ctx.SaveChanges() == 1;
+            }
+        }
     }
 }

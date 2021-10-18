@@ -243,6 +243,9 @@
     <Content Include="Views\Person\Delete.cshtml" />
     <Content Include="Views\Libraryy\Index.cshtml" />
     <Content Include="Views\Libraryy\Create.cshtml" />
+    <Content Include="Views\Libraryy\Details.cshtml" />
+    <Content Include="Views\Libraryy\Edit.cshtml" />
+    <Content Include="Views\Libraryy\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

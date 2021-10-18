@@ -43,6 +43,74 @@ namespace Library.WebMVC.Controllers
             return View(model);
         }
 
+        public ActionResult Details(int id)
+        {
+            var svc = CreateLibraryyService();
+            var model = svc.GetLibraryyById(id);
+
+            return View(model);
+        }
+
+        public ActionResult Edit(int id)
+        {
+            var service = CreateLibraryyService();
+            var detail = service.GetLibraryyById(id);
+            var model =
+                new LibraryyEdit
+                {
+                    LibraryID = detail.LibraryID,
+                    Name = detail.Name,
+                    Address = detail.Address
+                };
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(int id, LibraryyEdit model)
+        {
+            if (!ModelState.IsValid) return View(model);
+            
+            if(model.LibraryID != id)
+            {
+                ModelState.AddModelError("", "Id Mismatch");
+                return View(model);
+            }
+
+            var service = CreateLibraryyService();
+            if (service.UpdateLibraryy(model))
+            {
+                TempData["SaveResult"] = "Library was updated.";
+                return RedirectToAction("Index");
+            }
+
+            ModelState.AddModelError("", "Can not update.");
+            return View(model);
+        }
+
+        [ActionName("Delete")]
+        public ActionResult Delete(int id)
+        {
+            var svc = CreateLibraryyService();
+            var model = svc.GetLibraryyById(id);
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeletePost(int id)
+        {
+            var service = CreateLibraryyService();
+
+            service.DeleteLibraryy(id);
+
+            TempData["SaveResult"] = "Library was deleted";
+
+            return RedirectToAction("Index");
+        }
+
         private LibraryyService CreateLibraryyService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());
