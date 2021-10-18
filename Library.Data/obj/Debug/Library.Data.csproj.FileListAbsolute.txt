@@ -15,3 +15,5 @@ C:\Users\vohoa\Desktop\Project11\Library\Library.Data\obj\Debug\Library.Data.csp
 C:\Users\vohoa\Desktop\Project11\Library\Library.Data\obj\Debug\Library.Data.csproj.CoreCompileInputs.cache
 C:\Users\vohoa\Desktop\Project11\Library\Library.Data\obj\Debug\Library.Data.dll
 C:\Users\vohoa\Desktop\Project11\Library\Library.Data\obj\Debug\Library.Data.pdb
+C:\Users\vohoa\Desktop\Project11\Library\Library.Data\obj\Debug\Library.Data.csproj.AssemblyReference.cache
+C:\Users\vohoa\Desktop\Project11\Library\Library.Data\obj\Debug\Library.Data.Migrations.secondMigration.resources

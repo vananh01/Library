@@ -54,6 +54,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LibraryyCreate.cs" />
+    <Compile Include="LibraryyListItem.cs" />
     <Compile Include="PersonCreate.cs" />
     <Compile Include="PersonDetail.cs" />
     <Compile Include="PersonEdit.cs" />
@@ -63,6 +65,12 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Library.Data\Library.Data.csproj">
+      <Project>{88027775-8C94-4A78-9C2F-3DDAED771DCF}</Project>
+      <Name>Library.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

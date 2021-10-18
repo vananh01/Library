@@ -32,7 +32,7 @@ namespace Library.Data
             return new ApplicationDbContext();
         }
         public DbSet<Person> People { get; set; }
-
+        public DbSet<Libraryy> Libraries { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder

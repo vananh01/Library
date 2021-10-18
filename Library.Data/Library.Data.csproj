@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IdentityModels.cs" />
+    <Compile Include="Libraryy.cs" />
     <Compile Include="Migrations\202110172036354_InitialCreate.cs" />
     <Compile Include="Migrations\202110172036354_InitialCreate.Designer.cs">
       <DependentUpon>202110172036354_InitialCreate.cs</DependentUpon>
@@ -62,6 +63,10 @@
     <Compile Include="Migrations\202110172040407_inititalmigration.cs" />
     <Compile Include="Migrations\202110172040407_inititalmigration.Designer.cs">
       <DependentUpon>202110172040407_inititalmigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110180246325_secondMigration.cs" />
+    <Compile Include="Migrations\202110180246325_secondMigration.Designer.cs">
+      <DependentUpon>202110180246325_secondMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Person.cs" />
@@ -77,6 +82,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202110172040407_inititalmigration.resx">
       <DependentUpon>202110172040407_inititalmigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110180246325_secondMigration.resx">
+      <DependentUpon>202110180246325_secondMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

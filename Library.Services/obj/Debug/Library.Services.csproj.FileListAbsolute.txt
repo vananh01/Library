@@ -19,3 +19,4 @@ C:\Users\vohoa\Desktop\Project11\Library\Library.Services\obj\Debug\Library.Serv
 C:\Users\vohoa\Desktop\Project11\Library\Library.Services\obj\Debug\Library.Services.csproj.CoreCompileInputs.cache
 C:\Users\vohoa\Desktop\Project11\Library\Library.Services\obj\Debug\Library.Services.dll
 C:\Users\vohoa\Desktop\Project11\Library\Library.Services\obj\Debug\Library.Services.pdb
+C:\Users\vohoa\Desktop\Project11\Library\Library.Services\obj\Debug\Library.Services.csproj.CopyComplete
