@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Library.Services"
   ],
-  "SelectedNode": "\\Library.sln",
+  "SelectedNode": "\\Library.Services\\LibraryyService.cs",
   "PreviewInSolutionExplorer": false
 }

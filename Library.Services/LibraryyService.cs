@@ -47,6 +47,7 @@ namespace Library.Services
                                 LibraryID = e.LibraryID,
                                 Name = e.Name,
                                 Address = e.Address
+
                             }
                         );
                 return query.ToArray();

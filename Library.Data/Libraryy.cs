@@ -17,8 +17,6 @@ namespace Library.Data
         public string Name { get; set; }
         [Required]
         public string Address { get; set; }
-        [Required]
-        public bool IsOpen { get; set; }
 
     }
 }
