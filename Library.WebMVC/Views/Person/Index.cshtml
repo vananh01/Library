@@ -4,10 +4,10 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h1 class="text-center text-danger">User</h1>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New User", "Create")
 </p>
 @if (TempData.ContainsKey("SaveResult"))
 {
@@ -19,7 +19,7 @@
     @TempData["SaveResult"]
 </div> 
 }
-<table class="table">
+<table class="table table-bordered">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Name)
@@ -32,15 +32,15 @@
 
 @foreach (var item in Model) {
     <tr>
-        <td>
+        <td class="col-sm-4">
             @Html.DisplayFor(modelItem => item.Name)
         </td>
-        <td>
+        <td class="col-sm-4">
             @Html.DisplayFor(modelItem => item.Email)
         </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.PersonID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.PersonID }) |
+        <td class="col-sm-4">
+            @Html.ActionLink("Edit", "Edit", new { id=item.PersonID })   |
+            @Html.ActionLink("Details", "Details", new { id=item.PersonID })   |
             @Html.ActionLink("Delete", "Delete", new { id=item.PersonID })
         </td>
     </tr>
