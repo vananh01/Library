@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "03c3c936-7070-43c7-ad48-64df005b9621": {
+      "ProjectGuid": "03c3c936-7070-43c7-ad48-64df005b9621",
+      "DisplayName": "Library.WebMVC",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
