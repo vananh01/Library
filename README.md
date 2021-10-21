@@ -1,6 +1,6 @@
 # Library
-##In this project, I want to make a library page for people to search for books and which library the book is at.
-###It has three data tables:
+## In this project, I want to make a library page for people to search for books and which library the book is at.
+### It has three data tables:
 1. Person
 2. Book
 3. Library
